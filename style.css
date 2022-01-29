@@ -1,0 +1,56 @@
+body
+{
+  color: white;
+  background: #c0d3ff;
+}
+span
+{
+  font-size: 30px;
+}
+#camera , #result
+{
+  
+  border-width: 20px;
+  border-style: ridge;
+  border-color: red;
+  width: 430px!important;
+  height: 380px!important;
+}
+
+#camera{
+    animation-name: borderChange;
+    animation-duration: 10s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+}
+
+#result{
+    animation-name: borderChange;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+}
+#result_emotion_name ,#result_emotion_name2  
+{
+  color: black;
+}
+.emotion_name
+{
+  font-size: 40px;
+}
+.emoji
+{
+  font-size:48px;
+}
+
+@keyframes borderChange {
+    0%{border-color: red;}
+    14%{border-color: yellow;}
+    28%{border-color: greenyellow;}
+    42%{border-color: green;}
+    56%{border-color: cyan;}
+    70%{border-color: blue;}
+    84%{border-color: purple;}
+    100%{border-color: red;}
+}
